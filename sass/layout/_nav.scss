@@ -1,0 +1,38 @@
+.nav {
+    @include dis2x;
+    margin-left: 19.7rem;
+}
+
+.intro .nav {
+    @include respond(tablet) {
+        display: none;
+    }
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 3.4rem;
+}
+
+.nav__link {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-white;
+    text-decoration: none;
+    transition: .3s;
+
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}

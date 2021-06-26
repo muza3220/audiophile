@@ -1,0 +1,167 @@
+.footer {
+    background: $color-black-helper;
+
+}
+
+.footer__wrapper {
+    padding-top: 7.5rem;
+    padding-bottom: 4.8rem;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 10.1rem;
+        height: 4px;
+        background: $color-primary;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include respond (phone) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @include respond(tablet) {
+        padding-top: 6rem;
+        padding-bottom: 4.6rem;
+    }
+
+    @include respond (phone) {
+        padding-top: 5.2rem;
+        padding-bottom: 3.8rem;
+        // text-align: center;
+    }
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+
+    @include respond(tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @include respond (phone) {
+        align-items: center;
+    }
+}
+
+.nav__footer {
+    margin-left: auto;
+
+    @include respond(tablet) {
+        margin-left: 0;
+        margin-top: 3.2rem;
+    }
+
+    & .nav__item {
+        @include respond (phone) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    & .nav__item:not(:last-child) {
+        @include respond (phone) {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    @include respond (phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 4.8rem;
+    }
+}
+
+.footer__bottom {
+    margin-top: 3.6rem;
+
+    @include respond(tablet) {
+        margin-top: 3.2rem;
+    }
+
+    @include respond (phone) {
+        margin-top: 4.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.p--middle__footer {
+    max-width: 54rem;
+    opacity: .5;
+
+    @include respond(tablet) {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 8rem;
+    }
+
+    @include respond (phone) {
+        margin-bottom: 4.8rem;
+        text-align: center;
+    }
+}
+
+.p--middle__footer__last {
+    opacity: .5;
+    display: inline-block;
+    margin-top: 5.6rem;
+
+    @include respond(tablet) {
+        margin-top: 0;
+        // display: block   ;
+    }
+
+    @include respond (phone) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4.8rem;
+    }
+
+    // margin-right: auto;
+}
+
+.svg__wrapper {
+    // display: inline-block;
+    float: right;
+
+    @include respond (phone) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // margin-top: -8.8rem;
+}
+
+.icon__wrapper__link:not(:last-child) {
+    margin-right: 1.6rem;
+}
+
+.icon {
+    width: 2.4rem;
+    height: 2.4em;
+    color: $color-white;
+    transition: .3s;
+
+
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.twitter {
+    height: 1.95rem;
+}

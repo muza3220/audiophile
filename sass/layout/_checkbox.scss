@@ -1,0 +1,265 @@
+.checkbox__inp {
+    display: none;
+}
+
+.checkbox__label {
+    position: absolute;
+    right: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.case__img {
+    vertical-align: middle;
+}
+
+.carts__block {
+    width: 50vw;
+    height: calc(50vh + 1px);
+    background: rgba(150, 150, 150, .5);
+    transition: .5s;
+
+    position: fixed;
+    z-index: 2;
+
+    &1 {
+        left: 0;
+        top: -50vh;
+    }
+
+    &2 {
+        left: 0;
+        top: 100vh;
+    }
+
+    &3 {
+        left: 50vw;
+        top: -50vh;
+        transition-delay: .12s;
+    }
+
+    &4 {
+        left: 50vw;
+        top: 100vh;
+        transition-delay: .12s;
+    }
+}
+
+.checkbox__inp:checked~.carts__block1 {
+    top: 0;
+}
+
+.checkbox__inp:checked~.carts__block2 {
+    top: 50vh;
+}
+
+.checkbox__inp:checked~.carts__block3 {
+    top: 0;
+}
+
+.checkbox__inp:checked~.carts__block4 {
+    top: 50vh;
+}
+
+.cart {
+    width: 37.7rem;
+    background: $color-white;
+    border-radius: 8px;
+    padding: 3.2rem;
+    z-index: 111;
+    transform: scale(0.000001) rotate(180deg);
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .2s;
+    visibility: hidden;
+
+    position: fixed;
+    top: 11rem;
+    right: 16.5rem;
+
+    @media only screen and (max-width: 40.625em) {
+        right: 25%;
+    }
+
+    @include respond (phone) {
+        width: 32.7rem;
+        right: calc(50% - 32.7rem / 2);
+        transform: translateX(-50%);
+    }
+}
+
+.checkbox__inp:checked~.cart {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart__lines {
+    @include dis2x;
+    justify-content: space-between;
+}
+
+.cart-lines1 {
+    margin-bottom: 3.2rem;
+}
+
+.h6__checkbox {}
+
+.remove {
+    text-decoration-color: rgba(0, 0, 0, .5);
+    opacity: 0.5;
+    color: #000000;
+
+    &:hover {
+        color: $color-primary;
+        text-decoration-color: $color-primary;
+        opacity: 1;
+    }
+}
+
+.cart__lines2 {
+    justify-content: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.small__images__warpper {
+    width: 6.4rem;
+    height: 6.4rem;
+    background: $color-gray;
+    border-radius: 8px;
+    @include dis3x;
+}
+
+.small__image1 {
+    vertical-align: middle;
+}
+
+.p--middle__cart {
+    color: $color-black;
+    font-weight: bold;
+    margin-left: 1.6rem;
+}
+
+.p--middle__cost {
+    color: $color-black;
+    font-weight: bold;
+    opacity: .5;
+    margin-left: 1.6rem;
+}
+
+.numbers__cart {
+    width: 9.6rem;
+    height: 3.2rem;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.minus__cart {
+    margin-right: 1.2rem;
+}
+
+.plus__cart {
+    margin-left: 1.2rem;
+}
+
+.p--middle__total {
+    color: $color-black;
+    opacity: .5;
+}
+
+.p--large__cart__cost {
+    font-weight: bold;
+}
+
+.btn--one__checkout {
+    text-align: center;
+    margin-top: 2.4rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.exit {
+    // display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background: $color-primary;
+    border-radius: 50%;
+    z-index: 1111;
+    cursor: pointer;
+    // display: none;
+    transition: .4s;
+    transition-delay: .6s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.0000001) rotate(0deg);
+
+    animation: animated 3s infinite;
+
+    position: fixed;
+    top: 17rem;
+    right: 7rem;
+
+    @include dis3x;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 4px;
+        background: #243b55;
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 4px;
+        background: #243b55;
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+
+    @include respond (phone) {
+        top: 9rem;
+        right: calc(50% - 2rem);
+        // transform: translateX(-50%) scale(0.0000001) rotate(0deg);
+    }
+}
+
+.checkbox__inp:checked~.exit {
+    // display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+@keyframes animated {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,9 +1,10 @@
 // Abstracts
 @import './abstracts/variables';
-@import './abstracts/utils';
 @import './abstracts/mixins';
+@import './abstracts/utils';
 // Base
 @import './base/base';
+@import './base/fonts';
 @import './base/typography';
 @import './base/normalize';
 
@@ -11,13 +12,16 @@
 @import './components/btn';
 @import './components/card';
 @import './components/dropdown';
+@import './components/colors';
 
 // LAYOUT
 @import './layout/header';
+@import './layout/main';
 @import './layout/nav';
 @import './layout/footer';
 @import './layout/forms';
 @import './layout/list';
+@import './layout/checkbox';
 
 // PAGES
 @import './pages/home';

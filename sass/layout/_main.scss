@@ -1,0 +1,1083 @@
+.main {
+    background-color: $color-white-fa;
+    padding-bottom: 20rem;
+    padding-top: 20rem;
+
+    @include respond(tablet) {
+        padding-top: 14.8rem;
+        padding-bottom: 9.6rem;
+    }
+
+    @include respond (phone) {
+        padding-top: 9.2rem;
+        padding-bottom: 12rem;
+    }
+}
+
+.productes {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond (phone) {
+        flex-wrap: wrap;
+    }
+}
+
+.productes--cards__1 {
+    &::before {
+        background-image: url(../images/headphone.png);
+        width: 12.3rem;
+        height: 16rem;
+        top: -8rem;
+
+        @include respond (phone) {
+            width: 8rem;
+            height: 10.4rem;
+            top: -4.2rem;
+        }
+    }
+
+}
+
+.productes--cards__2 {
+    &::before {
+        background-image: url(../images/speaker.png);
+        width: 12.15rem;
+        height: 14.6rem;
+        top: -7.25rem;
+
+        @include respond (phone) {
+            width: 8.4rem;
+            height: 10.1rem;
+            top: -4.2rem;
+        }
+    }
+}
+
+.productes--cards__3 {
+    &::before {
+        background-image: url(../images/airphone.png);
+        width: 12.5rem;
+        height: 12.6rem;
+        top: -5.9rem;
+
+        @include respond (phone) {
+            width: 10.3rem;
+            height: 10.4rem;
+            top: -4.2rem;
+        }
+    }
+}
+
+.productes--cards__h6 {
+    margin-bottom: 1.5rem;
+
+    @include respond (phone) {
+        margin-bottom: 1rem;
+    }
+}
+
+.productes--cards__link {
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, .5);
+
+    &::after {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/arrow.png);
+        background-repeat: no-repeat;
+        background-size: 6px 1rem;
+        width: 6px;
+        height: 1rem;
+        margin-left: 1.332rem;
+    }
+}
+
+.zx9 {
+    width: 100%;
+    min-height: 56rem;
+    background-color: $color-primary;
+    background-image: url(../images/zx9-speaker.png), url(../images/circles.png);
+    background-repeat: no-repeat;
+    background-position: left 11.7rem bottom 0, top 0 left 0;
+    background-size: 41rem 49rem, inherit 94.4rem;
+    padding-top: 13.3rem;
+    padding-left: 66.6rem;
+    border-radius: 8px;
+    margin-top: 16.8rem;
+
+    @include respond(tablet) {
+        background-image: url(../images/zx9-speaker.png);
+        background-position: top 5.2rem left 50%;
+        background-size: 19.7rem 23.7rem;
+        margin-top: 9.6rem;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 35.3rem;
+        padding-bottom: 6.4rem;
+    }
+
+    @include respond (phone) {
+        background-size: 17.2rem 20.7rem;
+        background-position: top 5.5rem left 50%;
+        padding-top: 29.4rem;
+        padding-bottom: 5.5rem;
+    }
+}
+
+.h1__zx9 {
+    max-width: 26.1rem;
+
+    @include respond(tablet) {
+        text-align: center;
+    }
+
+    @include respond (phone) {
+        max-width: 25rem;
+        font-size: 3.6rem;
+        line-height: 4.0rem;
+    }
+}
+
+.p--middle__zx9 {
+    max-width: 34.9rem;
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+    opacity: .75;
+
+    @include respond(tablet) {
+        text-align: center;
+    }
+
+    @include respond (phone) {
+        margin-bottom: 2.4rem;
+        max-width: 28rem;
+    }
+}
+
+.btn--two__zx9 {
+    background: $color-black;
+    transition: .3s;
+
+    &:hover {
+        background: rgba(76, 76, 76, 1);
+    }
+}
+
+.zx7 {
+    width: 100%;
+    height: 32rem;
+    border-radius: 8px;
+    background-image: url(../images/zx-7-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    margin-top: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6.225rem;
+    justify-content: center;
+
+    @include respond(tablet) {
+        background-image: url(../images/zx-7-tablet-img.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @include respond (phone) {
+        background-image: url(../images/cardE3-phone-img.png);
+        padding-left: 2.4rem;
+        margin-top: 2.4rem;
+    }
+}
+
+
+
+.h3__zx7 {
+    margin-bottom: 3.2rem;
+}
+
+#btn--two__zx7 {
+    // min-width: 16rem;
+    background-color: #DADADA;
+
+
+    &:hover {
+        background-color: $color-black;
+    }
+}
+
+.yx1 {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    margin-top: 4.8rem;
+
+    @include respond (tablet) {
+        margin-top: 3.2rem;
+    }
+
+    @media only screen and (max-width: 46.875em) {
+        flex-wrap: wrap;
+    }
+
+    @include respond(phone) {
+        margin-top: 2.4rem;
+    }
+}
+
+.yx1__img__wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    height: 32rem;
+    width: 54rem;
+    margin-right: 1rem;
+    background-image: url(../images/earphone.png);
+    background-repeat: no-repeat;
+    background-size: 54rem 32rem;
+    background-position: center;
+
+    @media only screen and (max-width: 46.875em) {
+        width: 100%;
+        background-size: 100% 32rem;
+        margin-right: 0;
+    }
+}
+
+.yx1__conten {
+    width: 54rem;
+    height: 32rem;
+    background: $color-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    padding-left: 9.5rem;
+    margin-left: 1rem;
+
+    @include respond (tablet) {
+        padding-left: 3.1rem;
+        padding-right: 3.1rem;
+    }
+
+    @media only screen and (max-width: 46.875em) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2.4rem;
+        padding-left: 5rem;
+    }
+
+    @include respond (phone) {
+        padding-left: 2.4rem;
+    }
+}
+
+.h3__yx1 {
+    margin-bottom: 3.2rem;
+    width: 25rem;
+
+}
+
+#btn--two__yz1 {
+    background: inherit;
+    width: 16.2rem;
+
+    &:hover {
+        background: $color-black;
+    }
+}
+
+.gear {
+    @include dis2x;
+    justify-content: space-between;
+    margin-top: 20rem;
+
+    @include respond (tablet) {
+        margin-top: 9.6rem;
+        flex-direction: column-reverse;
+    }
+
+    @include respond (phone) {
+        margin-top: 12rem;
+    }
+}
+
+.h2__gear {
+    text-transform: uppercase;
+    max-width: 44.5rem;
+
+    @include respond(tablet) {
+        text-align: center;
+        max-width: 57.3rem;
+        margin-top: 6.3rem;
+    }
+
+    @include respond (phone) {
+        max-width: 32.7rem;
+        margin-top: 4rem;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p--middle__gear {
+    max-width: 44.5rem;
+    margin-top: 3.2rem;
+    color: $color-black;
+    opacity: .5;
+
+    @include respond(tablet) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 57.3rem;
+    }
+}
+
+.gear__img__wrapper {
+    width: 54rem;
+    height: 58.5rem;
+    background-image: url(../images/listening.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include respond (tablet) {
+        width: 100%;
+        height: 30rem;
+        background-image: url(../images/listening-tablet.png);
+        background-size: cover;
+    }
+}
+
+
+// ? """""""""""""HEADPHONES""""""""""""""//
+
+.headphone__cards__wrapper {
+    @include dis2x;
+    justify-content: space-between;
+
+    @include respond (tablet) {
+        flex-wrap: wrap;
+    }
+
+    // flex-wrap: wrap;
+
+    .headphone__cards__block {
+        width: 54rem;
+        height: 56rem;
+        background: $color-gray;
+        border-radius: 8px;
+        @include dis3x;
+
+        .removebg__img {
+            width: 22rem;
+            height: 24.3rem;
+        }
+
+        @include respond (tablet) {
+            width: 100%;
+            height: 35.2rem;
+        }
+    }
+
+    .headphone__cards__content {
+        margin-left: 2rem;
+
+        @include respond (tablet) {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5.2rem;
+        }
+
+        .h2__headphone__cards__content {
+            max-width: 44.5rem;
+            margin-top: 1.6rem;
+            margin-bottom: 3.2rem;
+        }
+
+        .p__headphone__cards__content {
+            max-width: 44.5rem;
+            color: $color-black;
+            opacity: .5;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.headphone__cards__wrapper:not(:last-child) {
+    margin-bottom: 16rem;
+}
+
+.headphone__cards__wrapper:nth-child(2) {
+    flex-direction: row-reverse;
+
+    @include respond (tablet) {
+        flex-direction: column;
+    }
+
+    .headphone__cards__content {
+        margin-left: 0;
+        margin-right: 2rem;
+
+        @include respond (tablet) {
+            margin-right: 0;
+        }
+    }
+}
+
+.cards__block__zx9-speaker__img {
+
+    @include respond(tablet) {
+        width: 20.2rem;
+        height: 24.3rem;
+    }
+}
+
+.cards__block__earphones__img {
+    @include respond (phone) {
+        width: 24.2rem;
+        height: 24.4rem;
+    }
+}
+
+.headphone__cards__wrapper:last-child {
+    margin-bottom: 17.2rem;
+}
+
+#products__main {
+    padding-top: 7.9rem;
+
+    @include respond (tablet) {
+        padding-top: 3.3rem
+    }
+
+    .headphone__cards__wrapper {
+        @include dis2x;
+        justify-content: space-between;
+        margin-bottom: 16rem;
+
+        @include respond (tablet) {
+            flex-direction: row-reverse;
+        }
+
+        &:nth-child(2) {
+            @include respond (tablet) {
+                flex-direction: column;
+            }
+
+            flex-direction: row-reverse;
+
+
+            .h2__headphone__cards__content {
+                margin-top: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 24rem;
+
+            @include respond (tablet) {
+                margin-bottom: 17.2rem;
+            }
+
+            // @include respond (phone) {}
+
+            .h2__headphone__cards__content {
+                margin-top: 0;
+            }
+        }
+
+        @include respond (tablet) {
+            flex-direction: column;
+            margin-bottom: 12rem;
+        }
+
+        @include respond (phone) {
+            margin-bottom: 8.8rem;
+        }
+
+        .headphone__cards__content {
+            @include respond (tablet) {
+                margin-top: 5.2rem;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .headphone__cards__wrapper__respond {
+        .headphone__cards__block {
+            @include respond (tablet) {
+                height: 48rem;
+                width: 28.1rem;
+            }
+
+            @include respond (phone) {
+                width: 32.7rem;
+                height: 32.7rem;
+            }
+
+            .removebg__img {
+                @include respond (tablet) {
+                    width: 18.1rem;
+                    height: 20.1rem;
+                    margin-top: 13.3rem;
+                }
+
+                @include respond (phone) {
+                    width: 18.5rem;
+                    height: 21.5rem;
+                    margin-top: 5.6rem;
+                }
+            }
+
+            .removebg3__img {
+                @include respond (tablet) {
+                    width: 18.5rem;
+                    height: 19.3rem;
+                }
+            }
+
+            .removebg__img__martop {
+                @include respond (tablet) {
+                    width: 16.7rem;
+                    height: 20.1rem;
+                    margin-top: 13.25rem;
+                }
+            }
+        }
+
+        .headphone__cards__content {
+            @include respond (tablet) {
+                max-width: 33.9rem;
+                text-align: left;
+                margin-top: 0;
+                margin-left: 4rem;
+            }
+
+            @include respond (phone) {
+                margin-left: 0;
+                margin-top: 3.2rem;
+            }
+
+            .h2__headphone__cards__content {
+                font-weight: bold;
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $color-black;
+
+                @include respond (phone) {}
+            }
+
+            .h6__headphones-product__cards {
+                @include respond (tablet) {
+                    margin-bottom: 3.1rem;
+                }
+
+                @include respond (phone) {
+                    margin-bottom: 2.4rem;
+                }
+            }
+        }
+
+
+    }
+
+    .removebg__img__phone {
+        @include respond (phone) {
+            width: 17rem !important;
+            height: 24.3rem !important;
+        }
+    }
+
+    @include respond (tablet) {
+        .removebg__img__for__respond {
+            width: 16.7rem !important;
+            height: 20.1rem !important;
+            margin-top: 13.55rem !important;
+        }
+    }
+
+    .headphone__cards__block {
+        width: 54rem;
+        height: 56rem;
+        background: $color-gray;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background-image: url(../../images/shadow.png);
+            background-repeat: no-repeat;
+            background-size: 26.2rem 5.6rem;
+            width: 26.2rem;
+            height: 5.6rem;
+            opacity: .5;
+
+            position: absolute;
+            top: 42.3rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include respond (tablet) {
+                top: 26.6rem;
+            }
+
+        }
+
+        @include respond (tablet) {
+            height: 35.2rem;
+            width: 100%;
+        }
+    }
+
+    .removebg__img {
+        margin-top: 6.65rem;
+
+        @include respond (tablet) {
+            width: 22rem;
+            height: 24.3rem;
+            margin-top: 4.1rem;
+        }
+    }
+
+    .removebg3__img {
+        margin-top: 6.2rem;
+    }
+
+    .removebg__img__martop {
+        margin-top: 10.1rem;
+    }
+
+    .earphone2__martop {
+        // margin-top: 13.1rem; 
+
+        @include respond (tablet) {
+            width: 18.5rem;
+            height: 20.5rem;
+            // margin-top: 13.3rem !important;
+        }
+    }
+
+    .headphone__img {
+        margin-top: 6.6rem;
+    }
+
+    .removebg3__img {
+        margin-top: 8.3rem;
+    }
+
+    .cards__block__zx9-speaker__img {
+        margin-top: 9.65rem;
+
+        @include respond (tablet) {
+            width: 20.2rem;
+            height: 24.3rem;
+            margin-top: 4.05rem;
+        }
+    }
+
+    .cards__block__earphones__img {
+        margin-top: 13.1rem;
+
+        @include respond (tablet) {
+            width: 24.2rem;
+            height: 24.4rem;
+            margin-top: 4rem;
+        }
+    }
+
+    .h2__headphone__cards__content {
+        max-width: 44.5rem;
+        margin-top: 1.6rem;
+        margin-bottom: 3.2rem;
+
+        @include respond (tablet) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include respond (phone) {
+            margin-top: 2.4rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .p__headphone__cards__content {
+        max-width: 44.5rem;
+        color: $color-black;
+        opacity: .5;
+        margin-bottom: 4rem;
+
+        @include respond (tablet) {
+            max-width: 57.2rem;
+            margin-bottom: 2.4rem !important;
+        }
+    }
+
+    .main__headphones {
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+
+        @include respond (tablet) {
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+    }
+
+    .gear__headphones {
+        margin-top: 16rem;
+
+        @include respond (phone) {
+            margin-top: 5.2rem;
+        }
+    }
+
+
+    //todo  """""""""""""HEADPHONES-PRODUCT""""""""""""""//
+
+    .main__headphones {
+        &>.container {
+            position: relative;
+        }
+    }
+
+    .p__headphone__cards__content {
+        margin-bottom: 3.2rem;
+    }
+
+    .h6__headphones-product__cards {
+        text-align: left;
+        margin-bottom: 4.7rem;
+    }
+
+    .btns__wrapper {
+        display: flex;
+    }
+
+    .numbers {
+        width: 12rem;
+        height: 4.8rem;
+        background: $color-gray;
+        @include dis3x;
+        margin-right: 1.6rem;
+    }
+
+    .minus {
+        margin-right: 2rem;
+        color: #B5B5B5;
+        font-size: 2rem;
+
+        &:hover {
+            color: $color-primary;
+            cursor: pointer;
+        }
+    }
+
+    .plus {
+        margin-left: 2rem;
+        color: #B5B5B5;
+        font-size: 2rem;
+
+        &:hover {
+            color: $color-primary;
+            cursor: pointer;
+        }
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16rem;
+
+        @include respond (tablet) {
+            flex-wrap: wrap;
+        }
+
+        @include respond (phone) {
+            margin-bottom: 8.8rem;
+        }
+    }
+
+    .h4__features {
+        text-transform: uppercase;
+        color: $color-black;
+        margin-bottom: 3.2rem;
+
+        @include respond (phone) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .p--middle-features {
+        max-width: 63.5rem;
+        color: $color-black;
+        opacity: .5;
+
+        @include respond (tablet) {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    .features__right {
+
+        @include respond (tablet) {
+            margin-top: 12rem;
+            display: flex;
+        }
+
+        @include respond (phone) {
+            margin-top: 8.8rem;
+            flex-direction: column;
+        }
+    }
+
+    .p--middle__box__wrapper {
+        @include respond (tablet) {
+            margin-left: 10rem;
+        }
+
+        @include respond (phone) {
+            margin-left: 0;
+        }
+    }
+
+    .p--middle__box {
+        color: rgba(0, 0, 0, .5);
+        @include dis2x;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        &::before {
+            content: '1x';
+            color: $color-primary;
+            font-size: 1.5rem;
+            margin-right: 2.1rem;
+        }
+
+        &:nth-child(3)::before {
+            content: '2x';
+        }
+
+        &__2x::before {
+            content: '2x';
+        }
+
+        &__6x::before {
+            content: '6x' !important;
+        }
+    }
+
+    .card__images__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16rem;
+
+        @include respond (tablet) {
+            margin-bottom: 12rem;
+        }
+
+        @include respond (phone) {
+            flex-direction: column;
+        }
+    }
+
+    .card__images__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1-img {
+        @include respond (tablet) {
+            width: 39.5rem;
+            height: 36.8rem;
+            margin-left: 1.8rem;
+        }
+
+        @include respond (phone) {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .card2-img {
+        margin-bottom: 3.2rem;
+
+        @include respond (tablet) {
+            width: 27.7rem;
+            height: 17.4rem;
+            margin-bottom: 2rem;
+        }
+
+        @include respond (phone) {
+            width: 100%;
+        }
+    }
+
+    .card3-img {
+        @include respond (tablet) {
+            width: 27.7rem;
+            height: 17.4rem;
+        }
+
+        @include respond (phone) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .likes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24rem;
+
+        @include respond (tablet) {
+            margin-bottom: 17.2rem;
+        }
+
+        @include respond (phone) {
+            flex-direction: column;
+        }
+    }
+
+    .h4__likes {
+        text-transform: uppercase;
+
+        @include respond (phone) {
+            font-size: 2.4rem;
+        }
+    }
+
+    .likes__cards__wrapper {
+        margin-top: 6.4rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @include respond (tablet) {
+            margin-top: 5.6rem;
+        }
+
+        @media only screen and (max-width: 46.875em) {
+            flex-direction: column;
+            margin-top: 4rem;
+        }
+    }
+
+    .likes__cards {
+        text-align: center;
+
+        &:not(:last-child) {
+            @media only screen and (max-width: 46.875em) {
+                margin-bottom: 5.6rem;
+            }
+        }
+    }
+
+    .likes__cards__blocks {
+        width: 35rem;
+        height: 31.8rem;
+        background: $color-gray;
+        @include dis3x;
+        border-radius: 8px;
+
+        @include respond (tablet) {
+            width: 22.3rem;
+            height: 31.8rem;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        @media only screen and (max-width: 46.875em) {
+            width: 100%;
+        }
+    }
+
+    .h5 {
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        letter-spacing: 1.71429px;
+    }
+
+    .h5__likes__cards__blocks {
+        text-transform: uppercase;
+        color: $color-black;
+        margin-top: 4rem;
+        margin-bottom: 3.2rem;
+    }
+}
+
+.last__step {
+    .headphone__cards__block {
+
+        .removebg__img__something {
+            width: 35rem;
+            height: 38.6rem;
+            margin-top: 0 !important;
+        }
+
+        &::after {
+            top: 31.9rem !important;
+
+            @include respond (phone) {
+                top: 24.2rem !important;
+            }
+        }
+
+        @media only screen and (max-width: 46.1875em) {
+            width: 100% !important;
+        }
+    }
+
+    .headphone__cards__content {
+        @include respond (tablet) {
+            align-items: flex-start;
+        }
+
+        @media only screen and (max-width: 46.1875em) {
+            margin-left: 0 !important;
+            margin-top: 3.2rem !important;
+        }
+
+    }
+
+    @include respond (phone) {
+        align-items: flex-start !important;
+    }
+}
+
+.last__h2 {
+    @include respond (tablet) {
+        margin-left: 0 !important;
+    }
+}
+
+#removebg__img__something {
+    margin-top: 0;
+}
